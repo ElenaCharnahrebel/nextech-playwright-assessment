@@ -8,7 +8,7 @@ test.describe('Authentication', () => {
     await login.goto();
     await login.login(users.valid.username, users.valid.password);
 
-    await expect(page).toHaveURL(/.*inventory\.html/);
+    await expect(page).toHaveURL(/.*inventory.html/);
   });
 
   test('Invalid login fails with error message', async ({ page }) => {
